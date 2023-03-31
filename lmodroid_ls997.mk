@@ -19,14 +19,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lmodroid/config/common_full_phone.mk)
 
 # Inherit from ls997 device
 $(call inherit-product, device/lge/ls997/device.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := ls997
-PRODUCT_NAME := lineage_ls997
+PRODUCT_NAME := lmodroid_ls997
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-LS997
 PRODUCT_MANUFACTURER := LGE
